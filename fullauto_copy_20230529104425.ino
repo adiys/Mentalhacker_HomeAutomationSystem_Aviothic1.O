@@ -17,13 +17,13 @@ BlynkTimer timer;
 bool pirbutton = 0;
 
 // Define component pins
-#define Buzzer D0
-#define MQ2 A0
-#define trig D4 
-#define echo D5
-#define PIR D6
-#define relay1 D7
-#define relay2 D8
+#define Buzzer D1
+#define MQ2 D2
+#define trig D3
+#define echo D4
+#define PIR D5
+#define relay1 D6
+#define relay2 D7
 
 //Get buttons values
 BLYNK_WRITE(V0) {
