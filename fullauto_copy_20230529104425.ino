@@ -8,9 +8,9 @@
 //Initialize the LCD display
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-char auth[] = "TYhbgTVpvGzadqa7RW_XoftUUXUIXvWa";//Enter your Auth token
-char ssid[] = "Abhay";//Enter your WIFI name
-char pass[] = "abhay10818";//Enter your WIFI password
+char auth[] = "TYhbgTVpvGzadqa7RW_XoftUUXUIXvWa";
+char ssid[] = "Abhay";
+char pass[] = "abhay10818";
 
 DHT dht(D3, DHT11); //(sensor pin,sensor type)
 BlynkTimer timer;
