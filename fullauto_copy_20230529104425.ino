@@ -151,6 +151,16 @@ BLYNK_WRITE(V6) {
   }
 }
 
+//Get buttons values
+BLYNK_WRITE(V7) {
+ bool RelayThree = param.asInt();
+  if (RelayThree == 1) {
+    digitalWrite(relay3, LOW);
+  } else {
+    digitalWrite(relay3, HIGH);
+  }
+}
+
 void loop() {
   Blynk.run();//Run the Blynk library
   timer.run();//Run the Blynk timer
